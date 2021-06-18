@@ -3,8 +3,7 @@ from bs4 import BeautifulSoup
 import time
 url=input("圖片網址:")
 chrome_options = webdriver.ChromeOptions()
-chrome_options.add_argument('--headless') # 啟動無頭模式
-chrome_options.add_argument('--disable-gpu')
+chrome_options.add_argument('--headless')
 chrome = webdriver.Chrome(chrome_options=chrome_options)
 chrome.get("http://iqdb.org/")
 sc = chrome.find_element_by_id("url")
